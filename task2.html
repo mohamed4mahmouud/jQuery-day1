@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <styl>
+  </head>
+  <body>
+    <div class="container" style="text-align: center;">
+      <img src="imgs/images.jpeg" alt="sponge" class="img" />
+      <div class="text" style="display: none;"> I'm SpongeBob SquarePants</div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+      $(".img").on("click", () => {
+        let text = $(".text");
+        text.slideToggle(300);
+      });
+    </script>
+  </body>
+</html>
